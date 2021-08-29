@@ -1,0 +1,4 @@
+redis:
+  url: redis://redis:6379
+sentry:
+  environment: production

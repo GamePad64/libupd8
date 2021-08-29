@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    x-app: celery-worker
+  name: celery-worker
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      x-app: celery-worker
+  template:
+    metadata:
+      labels:
+        x-app: celery-worker
+    spec:
+      containers:
+      - args: ["poetry", "run", "celery", "-A", "project.celeryapp", "worker", "-E"]
+        envFrom:
+        - configMapRef:
+            name: app-config
+        image: {{ .Values.werf.image.backend }}
+        name: celery-worker
+        resources: {}
+      restartPolicy: Always
+      imagePullSecrets:
+        - name: regcred

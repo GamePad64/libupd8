@@ -1,0 +1,42 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    x-app: flower
+  name: celery-flower
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      x-app: flower
+  template:
+    metadata:
+      labels:
+        x-app: flower
+    spec:
+      containers:
+      - envFrom:
+          - configMapRef:
+              name: app-config
+        image: mher/flower
+        name: celery-flower
+        ports:
+        - containerPort: 5555
+        resources: {}
+      restartPolicy: Always
+
+#---
+#apiVersion: v1
+#kind: Service
+#metadata:
+#  labels:
+#    x-app: flower
+#  name: celery-flower
+#spec:
+#  ports:
+#  - name: "5555"
+#    port: 5555
+#    targetPort: 5555
+#  selector:
+#    x-app: flower

@@ -1,0 +1,39 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    x-app: redis
+  name: redis
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      x-app: redis
+  template:
+    metadata:
+      labels:
+        x-app: redis
+      annotations:
+        ad.datadoghq.com/redis.logs: '[{"source":"redis","service":"redis"}]'
+    spec:
+      containers:
+      - image: redis:6
+        name: redis
+        resources: {}
+      restartPolicy: Always
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    x-app: redis
+  name: redis
+spec:
+  ports:
+  - name: "6379"
+    port: 6379
+    targetPort: 6379
+  selector:
+    x-app: redis

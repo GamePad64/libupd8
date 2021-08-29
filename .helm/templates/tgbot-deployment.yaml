@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    x-app: tgbot
+  name: tgbot
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      x-app: tgbot
+  template:
+    metadata:
+      labels:
+        x-app: tgbot
+    spec:
+      containers:
+      - args: ["poetry", "run", "python", "-m", "project.tgbotapp"]
+        envFrom:
+        - configMapRef:
+            name: app-config
+        image: {{ .Values.werf.image.backend }}
+        name: tgbot
+        resources: {}
+      restartPolicy: Always
+      imagePullSecrets:
+        - name: regcred

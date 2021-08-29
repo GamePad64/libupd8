@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    x-app: celery-beat
+  name: celery-beat
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      x-app: celery-beat
+  template:
+    metadata:
+      labels:
+        x-app: celery-beat
+    spec:
+      containers:
+      - name: celery-beat
+        resources: {}
+        args: ["poetry", "run", "celery", "-A", "project.celeryapp", "beat", "-S", "django"]
+        envFrom:
+        - configMapRef:
+            name: app-config
+        image: {{ .Values.werf.image.backend }}
+      restartPolicy: Always
+      imagePullSecrets:
+        - name: regcred

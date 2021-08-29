@@ -1,0 +1,22 @@
+version: "3.3"
+services:
+  redis:
+    image: redis:6
+    ports:
+      - "16379:6379"
+  flower:
+    image: mher/flower
+    ports:
+      - "15555:5555"
+    environment:
+      CELERY_BROKER_URL: "redis://redis:6379"
+    depends_on:
+      - redis
+  postgres:
+    image: postgres:13
+    ports:
+      - "15432:5432"
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_HOST_AUTH_METHOD: trust

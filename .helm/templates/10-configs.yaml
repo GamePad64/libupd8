@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  annotations:
+    "helm.sh/hook": pre-install, pre-upgrade
+    "helm.sh/hook-weight": "0"
+data:
+  CELERY_BROKER_URL: {{ .Values.redis.url }}
+  DATABASE_URL: {{ .Values.database.url }}
+  REDIS_MAIN_INSTANCE: {{ .Values.redis.url }}
+  SECRET_KEY: {{ .Values.app.secret_key }}
+  SENTRY_DSN: {{ .Values.sentry.dsn }}
+  SENTRY_ENVIRONMENT: {{ .Values.sentry.environment }}
+  TELEGRAM_TOKEN: {{ .Values.telegram.token }}
