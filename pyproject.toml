@@ -48,7 +48,7 @@ semver = "^2.13.0"
 [tool.poetry.dev-dependencies]
 black = "^21.7b0"
 ipython = "^7.27.0"
-isort = "^5.9.3"
+isort = "^5.10.1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
