@@ -61,7 +61,7 @@ def iter_metadata_files(ignored_slugs: set[str] = None):
             files = [
                 x.filename
                 for x in archive.infolist()
-                if x.filename and not x.is_dir() and not Path(x.filename).name == "config.json"
+                if x.filename and not x.is_dir() and not Path(x.filename).name == "config.json" and not str(Path(x.filename)).startswith(".")
             ]
 
             for indexfile in tqdm(files):
