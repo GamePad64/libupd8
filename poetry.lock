@@ -374,11 +374,11 @@ rest-framework = ["djangorestframework (>=3.0.0)"]
 
 [[package]]
 name = "emoji"
-version = "1.6.1"
+version = "2.2.0"
 description = "Emoji for Python"
 category = "main"
 optional = false
-python-versions = "*"
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
 [package.extras]
 dev = ["coverage", "coveralls", "pytest"]
@@ -1086,8 +1086,8 @@ h11 = ">=0.9.0,<1"
 
 [metadata]
 lock-version = "1.1"
-python-versions = "~3.11"
-content-hash = "a0fad8193024d154d1fbc7c91b3186c1cc781b6f069f57fd009cc1db99d0ac9c"
+python-versions = "^3.9"
+content-hash = "5d5dc52345489c2c91ac87122b8ce571e0c30b5c87ee979b624d77fe27db20f2"
 
 [metadata.files]
 amqp = [
@@ -1195,7 +1195,7 @@ django-timezone-field = [
     {file = "django_timezone_field-4.2.1-py3-none-any.whl", hash = "sha256:6dc782e31036a58da35b553bd00c70f112d794700025270d8a6a4c1d2e5b26c6"},
 ]
 emoji = [
-    {file = "emoji-1.6.1.tar.gz", hash = "sha256:53d61a8e4c025f6c295ab99c842302c66d47952199c4fde66dd060dee3ad4324"},
+    {file = "emoji-2.2.0.tar.gz", hash = "sha256:a2986c21e4aba6b9870df40ef487a17be863cb7778dcf1c01e25917b7cd210bb"},
 ]
 executing = [
     {file = "executing-1.2.0-py2.py3-none-any.whl", hash = "sha256:0314a69e37426e3608aada02473b4161d4caf5a4b244d1d0c48072b8fee7bacc"},
