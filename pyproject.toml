@@ -25,7 +25,7 @@ authors = ["Alexander Shishenko <alex@shishenko.com>"]
 [tool.poetry.dependencies]
 python = "^3.9"
 # Core components
-Django = "~3.2.11"
+Django = "~3.2.17"
 celery = {extras = ["redis"], version = "~5.2"}
 # Other components
 httpx = "^0.19.0"
