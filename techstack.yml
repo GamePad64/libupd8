@@ -1,0 +1,394 @@
+repo_name: GamePad64/libupd8
+report_id: 7af110591243218df7b70641b2be341c
+version: 0.1
+repo_type: Public
+timestamp: '2024-02-29T18:06:49+00:00'
+requested_by: GamePad64
+provider: github
+branch: main
+detected_tools_count: 24
+tools:
+- name: Python
+  description: A clear and powerful object-oriented programming language, comparable
+    to Perl, Ruby, Scheme, or Java.
+  website_url: https://www.python.org
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/993/pUBY5pVj.png
+  detection_source_url: https://github.com/GamePad64/libupd8
+  detection_source: Repo Metadata
+- name: Docker
+  description: Enterprise Container Platform for High-Velocity Innovation.
+  website_url: https://www.docker.com/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Virtual Machine Platforms & Containers
+  image_url: https://img.stackshare.io/service/586/n4u37v9t_400x400.png
+  detection_source_url: https://github.com/GamePad64/libupd8
+  detection_source: Repo Metadata
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/GamePad64/libupd8
+  detection_source: Repo Metadata
+- name: GitHub Actions
+  description: Automate your workflow from idea to production
+  website_url: https://github.com/features/actions
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Continuous Integration
+  image_url: https://img.stackshare.io/service/11563/actions.png
+  detection_source_url: https://github.com/GamePad64/libupd8/blob/main/.github/workflows/codeql-analysis.yml
+  detection_source: ".github/workflows/codeql-analysis.yml"
+  last_updated_by: Alexander Shishenko
+  last_updated_on: 2021-08-29 17:47:52.000000000 Z
+- name: PyPI
+  description: A repository of software for the Python programming language
+  website_url: https://pypi.org/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Hosted Package Repository
+  image_url: https://img.stackshare.io/service/12572/-RIWgodF_400x400.jpg
+  detection_source_url: https://github.com/GamePad64/libupd8/blob/main/pyproject.toml
+  detection_source: pyproject.toml
+  last_updated_by: Alexander Shishenko
+  last_updated_on: 2021-08-29 17:20:06.000000000 Z
+- name: Django
+  description: A high-level Python Web framework that encourages rapid development
+    and clean
+  package_url: https://pypi.org/project/Django
+  version: 3.2.11
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19832/default_58dbe7b4d7ec447b62773209af0f9a31bbabf5bd.png
+  detection_source_url: https://github.com/GamePad64/libupd8/blob/main/pyproject.toml
+  detection_source: pyproject.toml
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2022-01-08 23:10:33.000000000 Z
+  vulnerabilities:
+  - name: Django bypasses validation when using one form field to upload multiple
+      files
+    cve_id: CVE-2023-31047
+    cve_url: https://github.com/advisories/GHSA-r3xc-prgr-mg9p
+    detected_date: May 10
+    severity: critical
+    first_patched: 3.2.19
+  - name: SQL Injection in Django
+    cve_id: CVE-2022-28347
+    cve_url: https://github.com/advisories/GHSA-w24h-v9qh-8gxj
+    detected_date: Apr 23
+    severity: critical
+    first_patched: 3.2.13
+  - name: SQL Injection in Django
+    cve_id: CVE-2022-28346
+    cve_url: https://github.com/advisories/GHSA-2gwj-7jmv-h26r
+    detected_date: Apr 27
+    severity: critical
+    first_patched: 3.2.13
+  - name: 'Django vulnerable to Reflected File Download attack '
+    cve_id: CVE-2022-36359
+    cve_url: https://github.com/advisories/GHSA-8x94-hmjh-97hq
+    detected_date: Aug 12
+    severity: high
+    first_patched: 3.2.15
+  - name: Resource exhaustion in Django
+    cve_id: CVE-2023-24580
+    cve_url: https://github.com/advisories/GHSA-2hrw-hx67-34x6
+    detected_date: Feb 16
+    severity: high
+    first_patched: 3.2.18
+  - name: Django has regular expression denial of service vulnerability in EmailValidator/URLValidator
+    cve_id: CVE-2023-36053
+    cve_url: https://github.com/advisories/GHSA-jh3w-4vvf-mjgr
+    detected_date: Jul 6
+    severity: high
+    first_patched: 3.2.20
+- name: black
+  description: The uncompromising code formatter
+  package_url: https://pypi.org/project/black
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20099/default_029b9bbfb6be2cd34bebeda5b8e1e80a1d22441c.png
+  detection_source_url: https://github.com/GamePad64/libupd8/blob/main/pyproject.toml
+  detection_source: pyproject.toml
+  last_updated_by: Alexander Shishenko
+  last_updated_on: 2021-08-29 17:20:06.000000000 Z
+- name: celery
+  description: Distributed Task Queue
+  package_url: https://pypi.org/project/celery
+  version: 5.2.3
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19901/default_4f4fb10b6f169603a907dcb35a5a356d784e3bd3.png
+  detection_source_url: https://github.com/GamePad64/libupd8/blob/main/poetry.lock
+  detection_source: pyproject.toml
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2022-01-09 00:25:57.000000000 Z
+- name: django-environ
+  description: Django-environ allows you to utilize 12factor inspired environment
+    variables to configure your Django application
+  package_url: https://pypi.org/project/django-environ
+  version: 0.8.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20684/default_c0915e70f83a4ff795fa420880db8a76377fceac.png
+  detection_source_url: https://github.com/GamePad64/libupd8/blob/main/poetry.lock
+  detection_source: pyproject.toml
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2022-01-08 23:10:33.000000000 Z
+- name: django-model-utils
+  description: Django model mixins and utilities
+  package_url: https://pypi.org/project/django-model-utils
+  version: 4.2.0
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20019/default_faea030602e3d71554c57e6fc53190ac830da00d.png
+  detection_source_url: https://github.com/GamePad64/libupd8/blob/main/poetry.lock
+  detection_source: pyproject.toml
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2022-01-08 23:10:33.000000000 Z
+- name: django-redis
+  description: Full featured redis cache backend for Django
+  package_url: https://pypi.org/project/django-redis
+  version: 5.2.0
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20669/default_8661a5c1d9ac6f06e853c3c1b9fe936bb7029ff7.png
+  detection_source_url: https://github.com/GamePad64/libupd8/blob/main/poetry.lock
+  detection_source: pyproject.toml
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2022-01-09 00:25:57.000000000 Z
+- name: emoji
+  description: Emoji for Python
+  package_url: https://pypi.org/project/emoji
+  version: 1.6.1
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20228/default_ac3896467e151a154f15419dbab3ee7694c7ddf3.png
+  detection_source_url: https://github.com/GamePad64/libupd8/blob/main/poetry.lock
+  detection_source: pyproject.toml
+  last_updated_by: Alexander Shishenko
+  last_updated_on: 2021-08-29 17:20:06.000000000 Z
+- name: httpx
+  description: The next generation HTTP client
+  package_url: https://pypi.org/project/httpx
+  version: 0.19.0
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20315/default_5f4e928dbcb1c4db4050881fc2e0229785fc931c.png
+  detection_source_url: https://github.com/GamePad64/libupd8/blob/main/poetry.lock
+  detection_source: pyproject.toml
+  last_updated_by: Alexander Shishenko
+  last_updated_on: 2021-08-29 17:20:06.000000000 Z
+  vulnerabilities:
+  - name: Improper Input Validation in httpx
+    cve_id: CVE-2021-41945
+    cve_url: https://github.com/advisories/GHSA-h8pj-cxx2-jfg2
+    detected_date: Apr 30
+    severity: critical
+    first_patched: 0.23.0
+- name: ipython
+  description: 'IPython: Productive Interactive Computing'
+  package_url: https://pypi.org/project/ipython
+  version: 8.7.0
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19892/default_f716e4bc541a9eb6e3f5b7a20d7c35355075b0b4.png
+  detection_source_url: https://github.com/GamePad64/libupd8/blob/main/poetry.lock
+  detection_source: pyproject.toml
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2022-11-29 02:08:17.000000000 Z
+- name: isort
+  description: A Python utility / library to sort Python imports
+  package_url: https://pypi.org/project/isort
+  version: 5.10.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20117/default_9cf91bfbbfb266fc12a914cdc09d9e4b55c773bb.png
+  detection_source_url: https://github.com/GamePad64/libupd8/blob/main/poetry.lock
+  detection_source: pyproject.toml
+  last_updated_by: Alexander Shishenko
+  last_updated_on: 2021-08-29 17:20:06.000000000 Z
+- name: lxml
+  description: Powerful and Pythonic XML processing library combining libxml2/libxslt
+    with the ElementTree API
+  package_url: https://pypi.org/project/lxml
+  version: 4.7.1
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19835/default_85689b353a3a9409328e253ea28d859d29151e0c.png
+  detection_source_url: https://github.com/GamePad64/libupd8/blob/main/poetry.lock
+  detection_source: pyproject.toml
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2022-01-08 23:25:14.000000000 Z
+  vulnerabilities:
+  - name: lxml NULL Pointer Dereference allows attackers to cause a denial of service
+    cve_id: CVE-2022-2309
+    cve_url: https://github.com/advisories/GHSA-wrxv-2j5q-m38w
+    detected_date: Jul 7
+    severity: moderate
+    first_patched: 4.9.1
+- name: packaging
+  description: Core utilities for Python packages
+  package_url: https://pypi.org/project/packaging
+  version: '21.3'
+  license: BSD-3-Clause,Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19894/default_f716e4bc541a9eb6e3f5b7a20d7c35355075b0b4.png
+  detection_source_url: https://github.com/GamePad64/libupd8/blob/main/poetry.lock
+  detection_source: pyproject.toml
+  last_updated_by: Alexander Shishenko
+  last_updated_on: 2021-08-29 17:20:06.000000000 Z
+- name: psycopg2
+  description: Psycopg2 - Python-PostgreSQL Database Adapter
+  package_url: https://pypi.org/project/psycopg2
+  version: 2.9.3
+  license: BSD-3-Clause-Attribution
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20416/default_64aa60b33468d1d28611966765867676f6303b64.png
+  detection_source_url: https://github.com/GamePad64/libupd8/blob/main/poetry.lock
+  detection_source: pyproject.toml
+  last_updated_by: Alexander Shishenko
+  last_updated_on: 2021-08-29 17:20:06.000000000 Z
+- name: python-dotenv
+  description: Add .env support to your django/flask apps in development and deployments
+  package_url: https://pypi.org/project/python-dotenv
+  version: 0.19.2
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20095/default_3141eabecdd8efa55de73a33c43f2ac0d5bbf954.png
+  detection_source_url: https://github.com/GamePad64/libupd8/blob/main/poetry.lock
+  detection_source: pyproject.toml
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2022-11-29 02:08:17.000000000 Z
+- name: python-telegram-bot
+  description: We have made you a wrapper you can't refuse
+  package_url: https://pypi.org/project/python-telegram-bot
+  version: '13.10'
+  license: GPL-3.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20123/default_c68325cce20e10071c4ad3e54c2ee159ac131c11.png
+  detection_source_url: https://github.com/GamePad64/libupd8/blob/main/poetry.lock
+  detection_source: pyproject.toml
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2022-11-29 02:08:17.000000000 Z
+- name: semver
+  description: Python helper for Semantic Versioning
+  package_url: https://pypi.org/project/semver
+  version: 2.13.0
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19960/default_61e35171bd9c0e5c5b88b2e4221ca242576ad8c0.png
+  detection_source_url: https://github.com/GamePad64/libupd8/blob/main/poetry.lock
+  detection_source: pyproject.toml
+  last_updated_by: Alexander Shishenko
+  last_updated_on: 2021-08-29 17:20:06.000000000 Z
+- name: sentry-sdk
+  description: Python client for Sentry
+  package_url: https://pypi.org/project/sentry-sdk
+  version: 1.5.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19998/default_b31141ac99e60278dc869f5a0490a63444b590d7.png
+  detection_source_url: https://github.com/GamePad64/libupd8/blob/main/poetry.lock
+  detection_source: pyproject.toml
+  last_updated_by: Alexander Shishenko
+  last_updated_on: 2021-08-29 17:20:06.000000000 Z
+  vulnerabilities:
+  - name: Sentry SDK leaks sensitive session information when `sendDefaultPII` is
+      set to `True`
+    cve_id: CVE-2023-28117
+    cve_url: https://github.com/advisories/GHSA-29pr-6jr8-q5jm
+    detected_date: Mar 22
+    severity: high
+    first_patched: 1.14.0
+- name: tqdm
+  description: Fast, Extensible Progress Meter
+  package_url: https://pypi.org/project/tqdm
+  version: 4.62.3
+  license: MPL-2.0,MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19846/default_accee5d2b8ed75c2245f13504daf75b1cbc8cc9f.png
+  detection_source_url: https://github.com/GamePad64/libupd8/blob/main/poetry.lock
+  detection_source: pyproject.toml
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2022-01-08 22:58:09.000000000 Z
+- name: whitenoise
+  description: Radically simplified static file serving for WSGI applications
+  package_url: https://pypi.org/project/whitenoise
+  version: 5.3.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20302/default_e6bfb9eb79752f0f359e80676966e216a56792ab.png
+  detection_source_url: https://github.com/GamePad64/libupd8/blob/main/poetry.lock
+  detection_source: pyproject.toml
+  last_updated_by: Alexander Shishenko
+  last_updated_on: 2021-08-29 17:20:06.000000000 Z
