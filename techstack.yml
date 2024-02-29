@@ -2,7 +2,7 @@ repo_name: GamePad64/libupd8
 report_id: 7af110591243218df7b70641b2be341c
 version: 0.1
 repo_type: Public
-timestamp: '2024-01-05T09:22:05+00:00'
+timestamp: '2024-02-29T18:06:49+00:00'
 requested_by: GamePad64
 provider: github
 branch: main
@@ -99,12 +99,6 @@ tools:
     detected_date: Apr 27
     severity: critical
     first_patched: 3.2.13
-  - name: Django has regular expression denial of service vulnerability in EmailValidator/URLValidator
-    cve_id: CVE-2023-36053
-    cve_url: https://github.com/advisories/GHSA-jh3w-4vvf-mjgr
-    detected_date: Jul 6
-    severity: high
-    first_patched: 3.2.20
   - name: 'Django vulnerable to Reflected File Download attack '
     cve_id: CVE-2022-36359
     cve_url: https://github.com/advisories/GHSA-8x94-hmjh-97hq
@@ -117,6 +111,12 @@ tools:
     detected_date: Feb 16
     severity: high
     first_patched: 3.2.18
+  - name: Django has regular expression denial of service vulnerability in EmailValidator/URLValidator
+    cve_id: CVE-2023-36053
+    cve_url: https://github.com/advisories/GHSA-jh3w-4vvf-mjgr
+    detected_date: Jul 6
+    severity: high
+    first_patched: 3.2.20
 - name: black
   description: The uncompromising code formatter
   package_url: https://pypi.org/project/black
